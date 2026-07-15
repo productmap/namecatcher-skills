@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "organization": "NameCatcher",
+  "date": "July 2026",
+  "abstract": "Agent skills for valuing collectible Telegram usernames: namability scoring (0-100), fair price estimation in GRAM, and positioning theses. Built on the NameCatcher public API; score model validated against real Fragment sales.",
+  "references": [
+    "https://t.me/NameCatcherBot",
+    "https://api-namecatcher.rocketname.com/public/score/wearlab",
+    "https://fragment.com"
+  ]
+}
