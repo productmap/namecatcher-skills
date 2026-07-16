@@ -3,12 +3,40 @@
   "version": "0.1.0",
   "description": "MCP server for NameCatcher — score and value collectible Telegram usernames (namability 0-100, fair price, thesis). Free public API, no key.",
   "type": "module",
-  "bin": { "namecatcher-mcp": "mcp/server.mjs" },
-  "files": ["mcp", "names", "README.md", "LICENSE"],
+  "bin": {
+    "namecatcher-mcp": "mcp/server.mjs"
+  },
+  "files": [
+    "mcp",
+    "names",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
     "zod": "^3.24.0"
   },
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/productmap/namecatcher-skills" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/productmap/namecatcher-skills"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "telegram",
+    "ton",
+    "usernames",
+    "valuation",
+    "fragment",
+    "ai-agents"
+  ],
+  "homepage": "https://github.com/productmap/namecatcher-skills#readme",
+  "bugs": {
+    "url": "https://github.com/productmap/namecatcher-skills/issues"
+  },
+  "author": "NameCatcher (https://t.me/NameCatcherBot)",
+  "engines": {
+    "node": ">=18"
+  }
 }
