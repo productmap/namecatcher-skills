@@ -1,6 +1,6 @@
 {
   "name": "namecatcher-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for NameCatcher — score and value collectible Telegram usernames (namability 0-100, fair price, thesis). Free public API, no key.",
   "type": "module",
   "bin": {
@@ -38,5 +38,6 @@
   "author": "NameCatcher (https://t.me/NameCatcherBot)",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "mcpName": "io.github.productmap/namecatcher-skills"
 }
