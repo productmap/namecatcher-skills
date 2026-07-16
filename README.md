@@ -8,7 +8,7 @@ Three ways to plug in, thinnest first:
 | ----- | --- | ------- |
 | [Plain HTTP](#api-reference) | any agent that can `curl`/`fetch` | nothing |
 | [Agent Skill](#agent-skill) | Claude Code / skills-compatible agents | `npx skills add productmap/namecatcher-skills` |
-| [MCP server](#mcp-server) | Claude Desktop/Code, any MCP client | `npx -y github:productmap/namecatcher-skills` |
+| [MCP server](#mcp-server) | Claude Desktop/Code, any MCP client | `npx -y namecatcher-mcp` |
 
 Built by [NameCatcher](https://t.me/NameCatcherBot) — the Telegram mini app for username investors: mint catching, market analytics, portfolio, value passports.
 
@@ -102,12 +102,12 @@ A PR adding this skill to the official [ton-org/skills](https://github.com/ton-o
 
 ## MCP server
 
-A thin stdio bridge over the same API — for Claude Desktop, Claude Code, and any MCP client. No key needed.
+A thin stdio bridge over the same API — for Claude Desktop, Claude Code, and any MCP client. No key needed. Published on npm as [`namecatcher-mcp`](https://www.npmjs.com/package/namecatcher-mcp) (GitHub install `npx -y github:productmap/namecatcher-skills` also works).
 
 **Claude Code:**
 
 ```bash
-claude mcp add namecatcher -- npx -y github:productmap/namecatcher-skills
+claude mcp add namecatcher -- npx -y namecatcher-mcp
 ```
 
 **Claude Desktop / other MCP clients** (`mcpServers` config):
@@ -117,7 +117,7 @@ claude mcp add namecatcher -- npx -y github:productmap/namecatcher-skills
   "mcpServers": {
     "namecatcher": {
       "command": "npx",
-      "args": ["-y", "github:productmap/namecatcher-skills"]
+      "args": ["-y", "namecatcher-mcp"]
     }
   }
 }
