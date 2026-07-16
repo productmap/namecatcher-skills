@@ -104,6 +104,16 @@ A PR adding this skill to the official [ton-org/skills](https://github.com/ton-o
 
 A thin stdio bridge over the same API — for Claude Desktop, Claude Code, and any MCP client. No key needed. Published on npm as [`namecatcher-mcp`](https://www.npmjs.com/package/namecatcher-mcp) (GitHub install `npx -y github:productmap/namecatcher-skills` also works).
 
+**Remote endpoint (Streamable HTTP)** — same three tools, zero install:
+
+```
+https://mcp-namecatcher.rocketname.com/mcp
+```
+
+```bash
+claude mcp add --transport http namecatcher https://mcp-namecatcher.rocketname.com/mcp
+```
+
 **Claude Code:**
 
 ```bash
